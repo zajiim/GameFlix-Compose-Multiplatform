@@ -47,7 +47,6 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtimeCompose)
-            implementation(libs.koin.core)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -64,7 +63,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.neon.game.domain"
+    namespace = "org.neon.shared"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
@@ -96,7 +95,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "org.neon.game.domain"
+            packageName = "org.neon.shared"
             packageVersion = "1.0.0"
         }
     }

@@ -48,3 +48,4 @@ include(":search:data")
 include(":search:domain")
 include(":search:presentation")
 
+include(":shared")

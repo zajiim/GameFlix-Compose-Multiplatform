@@ -95,7 +95,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "org.neon.core-database"
+            packageName = "org.neon.coreDatabase"
             packageVersion = "1.0.0"
         }
     }
